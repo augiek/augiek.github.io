@@ -116,7 +116,7 @@ img{
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #fff;
+  background-color: var(--second-color);
   box-shadow: 0 1px 4px rgba(146,161,176,.15);
 }
 
@@ -127,7 +127,7 @@ img{
   justify-content: space-between;
   align-items: center;
   font-weight: var(--font-semi);
-  background-color: #3c3747;
+  background-color: var(--second-color);
 }
 @media screen and (max-width: 768px){
   .nav__menu{
@@ -158,10 +158,11 @@ img{
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color: var(--first-color);
+  background-color: var(--second-color);
 }
 .nav__logo{
-  color: var(--second-color);
+  /* color: var(--second-color); */
+  color: white
 }
 .nav__toggle{
   color: var(--second-color);
