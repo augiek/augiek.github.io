@@ -464,6 +464,9 @@ img{
     margin-left: auto;
     margin-right: auto;
   }
+  .home{
+    height: 90vh;
+  }
   .home__img{
     right: 10%;
   }
