@@ -109,7 +109,6 @@ img{
   width: calc(100% - 2rem);
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
-  color: white;
 }
 .l-header{
   width: 100%;
@@ -213,7 +212,8 @@ img{
 }
 .home__social{
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  flex-direction: row;
 }
 .home__social-icon{
   width: max-content;
