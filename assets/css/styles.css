@@ -8,7 +8,7 @@
 
 /*===== Colors =====*/
 :root{
-  --first-color: hsl(0, 0%, 2%);
+  --first-color: hsla(253, 79%, 65%, 0.856);
   --second-color: #3c3747;
 }
 
@@ -139,6 +139,7 @@ img{
     padding: 2rem;
     background-color: var(--second-color);
     transition: .5s;
+    color: white;
   }
 }
 .nav__item{
