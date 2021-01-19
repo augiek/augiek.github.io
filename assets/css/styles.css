@@ -241,7 +241,8 @@ img{
   color: #fff;
   /* padding: .75rem 2.5rem; */
   /* padding: 10px 24px; */
-  width: 65px;
+  width: 80px;
+  height: 14px;
   font-weight: var(--font-semi);
   border-radius: .5rem;
 }
