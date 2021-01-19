@@ -8,8 +8,8 @@
 
 /*===== Colors =====*/
 :root{
-  --first-color: #166f72;
-  --second-color: #482a94;
+  --first-color: #381d7a;
+  --second-color: #3c3747;
 }
 
 /*===== Font =====*/
@@ -127,6 +127,7 @@ img{
   justify-content: space-between;
   align-items: center;
   font-weight: var(--font-semi);
+  background-color: #3c3747;
 }
 @media screen and (max-width: 768px){
   .nav__menu{
