@@ -83,7 +83,6 @@ img{
   margin-top: var(--mb-2);
   margin-bottom: var(--mb-4);
   text-align: center;
-  color: greenyellow;
 }
 .section-title::after{
   position: absolute;
@@ -397,6 +396,7 @@ img{
   .nav__list{
     display: flex;
     padding-top: 0;
+    color: red;
   }
   .nav__item{
     margin-left: var(--mb-6);
