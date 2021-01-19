@@ -221,7 +221,7 @@ img{
 .home__social-icon{
   width: max-content;
   margin-bottom: var(--mb-2);
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--second-color);
 }
 .home__social-icon:hover{
@@ -239,10 +239,10 @@ img{
   display: inline-block;
   background-color: var(--first-color);
   color: #fff;
-  /* padding: .75rem 2.5rem; */
+  padding: .75rem 2.5rem;
   /* padding: 10px 24px; */
-  width: 80px;
-  height: 14px;
+  /* width: 80px;
+  height: 14px; */
   font-weight: var(--font-semi);
   border-radius: .5rem;
 }
