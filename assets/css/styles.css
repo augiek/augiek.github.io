@@ -171,7 +171,8 @@ img{
   color: white
 }
 .nav__toggle{
-  color: var(--second-color);
+  /* color: var(--second-color); */
+  color: white;
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -191,6 +192,7 @@ img{
 /*=== Show menu ===*/
 .show{
   right: 0;
+  color: white;
 }
 
 /*===== HOME =====*/
