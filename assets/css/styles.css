@@ -185,6 +185,7 @@ img{
   left: 0;
   top: 2rem;
   background-color: var(--first-color);
+  color: white;
 }
 
 /*=== Show menu ===*/
