@@ -240,7 +240,8 @@ img{
   background-color: var(--first-color);
   color: #fff;
   /* padding: .75rem 2.5rem; */
-  padding: 10px 24px;
+  /* padding: 10px 24px; */
+  width: 20px;
   font-weight: var(--font-semi);
   border-radius: .5rem;
 }
