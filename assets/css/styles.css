@@ -83,6 +83,7 @@ img{
   margin-top: var(--mb-2);
   margin-bottom: var(--mb-4);
   text-align: center;
+  color: greenyellow;
 }
 .section-title::after{
   position: absolute;
