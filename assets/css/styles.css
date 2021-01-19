@@ -128,6 +128,7 @@ img{
   align-items: center;
   font-weight: var(--font-semi);
   background-color: var(--second-color);
+  color: white;
 }
 @media screen and (max-width: 768px){
   .nav__menu{
@@ -148,10 +149,11 @@ img{
 }
 .nav__link{
   position: relative;
-  color: #fff;
+  color: white;
 }
 .nav__link:hover{
   position: relative;
+  color: white;
 }
 .nav__link:hover::after{
   position: absolute;
@@ -161,6 +163,7 @@ img{
   left: 0;
   top: 2rem;
   background-color: var(--second-color);
+  color: white;
 }
 .nav__logo{
   /* color: var(--second-color); */
