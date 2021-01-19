@@ -211,6 +211,7 @@ img{
   color: var(--first-color);
 }
 .home__social{
+  position: center;
   display: flex;
   /* flex-direction: column; */
   flex-direction: row;
@@ -218,7 +219,7 @@ img{
 .home__social-icon{
   width: max-content;
   margin-bottom: var(--mb-2);
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--second-color);
 }
 .home__social-icon:hover{
