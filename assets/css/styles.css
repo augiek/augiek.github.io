@@ -402,12 +402,14 @@ img{
   .nav__item{
     margin-left: var(--mb-6);
     margin-bottom: 0;
+    color: white;
   }
   .nav__toggle{
     display: none;
   }
   .nav__link{
     color: var(--second-color);
+    color: white;
   }
 
   .home{
