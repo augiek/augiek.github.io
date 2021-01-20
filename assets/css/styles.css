@@ -220,7 +220,8 @@ img{
 }
 .home__social-icon{
   width: max-content;
-  margin-bottom: var(--mb-2);
+  /* margin-bottom: var(--mb-2); */
+  margin: 15px;
   font-size: 2rem;
   /* color: var(--second-color); */
   color: rgb(114, 110, 116)
