@@ -221,8 +221,9 @@ img{
 .home__social-icon{
   width: max-content;
   margin-bottom: var(--mb-2);
-  font-size: 3rem;
-  color: var(--second-color);
+  font-size: 2rem;
+  /* color: var(--second-color); */
+  color: rgb(114, 110, 116)
 }
 .home__social-icon:hover{
   color: var(--first-color);
@@ -357,6 +358,7 @@ img{
   font-size: var(--normal-font-size);
   cursor: pointer;
   margin-left: auto;
+  padding: .75rem 2.5rem;
 }
 
 /* ===== FOOTER =====*/
