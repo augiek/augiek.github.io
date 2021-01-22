@@ -1,4 +1,4 @@
-import 'boxicons'
+// import 'boxicons'
 
 /*===== MENU SHOW =====*/ 
 const showMenu = (toggleId, navId) =>{
