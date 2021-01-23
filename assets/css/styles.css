@@ -308,7 +308,7 @@ img{
   border-radius: .5rem;
   z-index: var(--z-back);
 }
-.skills__html{
+/* .skills__html{
   width: 95%;
 }
 .skills__css{
@@ -319,7 +319,8 @@ img{
 }
 .skills__ux{
   width: 85%;
-}
+/* } */
+
 .skills__img{
   border-radius: .5rem;
 }
@@ -332,6 +333,11 @@ img{
   width: calc(100% - 2rem);
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
+}
+
+  .skills_left_column{
+    color: green;
+  }
 
 /* ===== WORK =====*/
 .work__container{
