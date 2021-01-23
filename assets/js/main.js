@@ -57,3 +57,47 @@ sr.reveal('.work__img',{interval: 200});
 
 /*SCROLL CONTACT*/
 sr.reveal('.contact__input',{interval: 200}); 
+
+// Firebase configuration
+var firebaseConfig = {
+    apiKey: "xxxxx",
+    authDomain: "xxxxx",
+    databaseURL: "xxxxx",
+    projectId: "xxxxx",
+    storageBucket: "xxxxx",
+    messagingSenderId: "xxxxx",
+    appId: "xxxxx",
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  
+  // Refernece contactInfo collections
+  let contactInfo = firebase.database().ref("infos");
+  
+  // Listen for a submit
+  document.querySelector(".contact__form").addEventListener("submit", submitForm);
+  
+  function submitForm(e) {
+    e.preventDefault();
+  
+    //  Get input Values
+    let name = document.querySelector(".name").value;
+    let email = document.querySelector(".email").value;
+    let message = document.querySelector(".message").value;
+    console.log(name, email, message);
+  
+    saveContactInfo(name, email, message);
+  
+    document.querySelector(".contact-form").reset();
+  }
+  
+  // Save info to Firebase
+  function saveContactInfo(name, email, message) {
+    let newContactInfo = contactInfo.push();
+  
+    newContactInfo.set({
+      name: name,
+      email: email,
+      message: message,
+    });
+  }
