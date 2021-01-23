@@ -1,4 +1,6 @@
 
+<!-- for testing/dev: run "http-server" in command line for localhost:8080 -->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -192,12 +194,17 @@
 
                 <div class="contact__container bd-grid">
                     <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input name">
-                        <input type="mail" placeholder="Email" class="contact__input email">
+                        <input type="text" placeholder="Name" class="contact__input name" required>
+                        <input type="mail" placeholder="Email" class="contact__input email" required>
                         <textarea name="" id="" cols="0" rows="10" class="contact__input message"></textarea>
                         <button type="submit" class="contact__button button">Send</button>
                     </form>
                 </div>
+
+                <div class="infoResults">
+                    <!-- empty for now; will  be contact form data -->
+                </div>
+
             </section>
         </main>
 

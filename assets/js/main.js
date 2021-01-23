@@ -1,5 +1,7 @@
 // import 'boxicons'
 
+// added this at 12:36pm on 1/23/21 
+
 /*===== MENU SHOW =====*/ 
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
@@ -87,7 +89,7 @@ sr.reveal('.contact__input',{interval: 100});
     let name = document.querySelector(".name").value;
     let email = document.querySelector(".email").value;
     let message = document.querySelector(".message").value;
-    console.log(name, email, message);
+    // console.log(name, email, message);
   
     saveContactInfo(name, email, message);
   
@@ -103,4 +105,35 @@ sr.reveal('.contact__input',{interval: 100});
       email: email,
       message: message,
     });
+
+    retrieveInfo();
+  }
+
+  // Retrieve info from Firebase
+  function retrieveInfo() {
+    let ref = firebase.database().ref("info");
+    ref.on("value", gotData)
+  }
+  
+  function gotData(data) {
+    let info = data.val();
+    let keys = Object.keys(info);
+
+    for (let i = 0; i < keys.length; i++) {
+      let infoData = keys[i]
+      let name = info[infoData].name
+      let email = info[infoData].email
+      let message = info[infoData].message
+      console.log(name, email, message)
+
+      let infoResults = document.querySelector(".infoResults");
+
+      infoResults.innerHTML += 
+        `<div>
+            <p><strong>Name: <strong/>${name} <br/>
+            <a><strong>Email: <strong/>${email} </a><br/>
+            <a><strong>Message: <strong/>${message} </a>
+          </p>
+        </div>`;
+    }
   }
