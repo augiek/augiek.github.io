@@ -335,9 +335,9 @@ img{
   margin-right: var(--mb-2);
 }
 
-  .skills_left_column{
-    color: green;
-  }
+.skills_left_column{
+  color: green;
+}
 
 /* ===== WORK =====*/
 .work__container{
