@@ -58,21 +58,21 @@ sr.reveal('.work__img',{interval: 200});
 /*SCROLL CONTACT*/
 sr.reveal('.contact__input',{interval: 200}); 
 
-// Firebase configuration
-var firebaseConfig = {
-    apiKey: "xxxxx",
-    authDomain: "xxxxx",
-    databaseURL: "xxxxx",
-    projectId: "xxxxx",
-    storageBucket: "xxxxx",
-    messagingSenderId: "xxxxx",
-    appId: "xxxxx",
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+// // Firebase configuration
+// var firebaseConfig = {
+//     apiKey: "xxxxx",
+//     authDomain: "xxxxx",
+//     databaseURL: "xxxxx",
+//     projectId: "xxxxx",
+//     storageBucket: "xxxxx",
+//     messagingSenderId: "xxxxx",
+//     appId: "xxxxx",
+//   };
+//   // Initialize Firebase
+//   firebase.initializeApp(firebaseConfig);
   
-  // Refernece contactInfo collections
-  let contactInfo = firebase.database().ref("infos");
+//   // Refernece contactInfo collections
+//   let contactInfo = firebase.database().ref("infos");
   
   // Listen for a submit
   document.querySelector(".contact__form").addEventListener("submit", submitForm);
@@ -91,13 +91,13 @@ var firebaseConfig = {
     document.querySelector(".contact-form").reset();
   }
   
-  // Save info to Firebase
-  function saveContactInfo(name, email, message) {
-    let newContactInfo = contactInfo.push();
+//   // Save info to Firebase
+//   function saveContactInfo(name, email, message) {
+//     let newContactInfo = contactInfo.push();
   
-    newContactInfo.set({
-      name: name,
-      email: email,
-      message: message,
-    });
-  }
+//     newContactInfo.set({
+//       name: name,
+//       email: email,
+//       message: message,
+//     });
+//   }
