@@ -31,7 +31,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction));
 const sr = ScrollReveal({
     origin: 'top',
     distance: '80px',
-    duration: 2000,
+    duration: 1000,
     reset: true
 });
 
@@ -43,8 +43,8 @@ sr.reveal('.home__social-icon',{ interval: 200});
 
 /*SCROLL ABOUT*/
 sr.reveal('.about__img',{}); 
-sr.reveal('.about__subtitle',{delay: 400}); 
-sr.reveal('.about__text',{delay: 400}); 
+sr.reveal('.about__subtitle',{delay: 100}); 
+sr.reveal('.about__text',{delay: 100}); 
 
 /*SCROLL SKILLS*/
 sr.reveal('.skills__subtitle',{}); 
@@ -56,23 +56,26 @@ sr.reveal('.skills__img',{delay: 600});
 sr.reveal('.work__img',{interval: 200}); 
 
 /*SCROLL CONTACT*/
-sr.reveal('.contact__input',{interval: 200}); 
+sr.reveal('.contact__input',{interval: 100}); 
 
-// // Firebase configuration
-// var firebaseConfig = {
-//     apiKey: "xxxxx",
-//     authDomain: "xxxxx",
-//     databaseURL: "xxxxx",
-//     projectId: "xxxxx",
-//     storageBucket: "xxxxx",
-//     messagingSenderId: "xxxxx",
-//     appId: "xxxxx",
-//   };
-//   // Initialize Firebase
-//   firebase.initializeApp(firebaseConfig);
+// Contact Form Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyClpi-FX03vmlOhfUeYQPMzHvhV9bG1G2k",
+    authDomain: "augie-personal-site.firebaseapp.com",
+    projectId: "augie-personal-site",
+    storageBucket: "augie-personal-site.appspot.com",
+    messagingSenderId: "1037920827938",
+    appId: "1:1037920827938:web:7d1b5bce9c4ba828e3e87b",
+    measurementId: "G-NBELX7PMZB"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
   
-//   // Refernece contactInfo collections
-//   let contactInfo = firebase.database().ref("infos");
+  // Reference contactInfo collections
+  let contactInfo = firebase.database().ref("infos");
   
   // Listen for a submit
   document.querySelector(".contact__form").addEventListener("submit", submitForm);
@@ -88,16 +91,16 @@ sr.reveal('.contact__input',{interval: 200});
   
     saveContactInfo(name, email, message);
   
-    document.querySelector(".contact-form").reset();
+    document.querySelector(".contact__form").reset();
   }
   
-//   // Save info to Firebase
-//   function saveContactInfo(name, email, message) {
-//     let newContactInfo = contactInfo.push();
+  // Save info to Firebase
+  function saveContactInfo(name, email, message) {
+    let newContactInfo = contactInfo.push();
   
-//     newContactInfo.set({
-//       name: name,
-//       email: email,
-//       message: message,
-//     });
-//   }
+    newContactInfo.set({
+      name: name,
+      email: email,
+      message: message,
+    });
+  }
